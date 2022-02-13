@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'exo', sans-serif;
+}
+body{
+    background-color: #181717;
+}
+header{
+    display: flex;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.container a{
+    text-decoration: none;
+}
+header .container::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #a2a2a2;
+    bottom: 0;
+    width: calc(100% - 30px);
+    left: 15px;
+}
+header .logo img{
+    height: 30px;
+    width: 55px;
+}
+.beta{
+    padding: 2px 10px;
+    margin-left: 4px;
+    border-radius: 12px;
+    background-color: #fc238b;
+    color: #fff;
+}
+header nav{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 6px;
+}
+header nav ul{
+    display: flex;
+    margin: 0;
+}
+header nav ul li{
+    display: block;
+    text-decoration: none;
+    transition: 0.3s ease;
+    color: white;
+}
+header nav ul li a{
+    padding: 10px 19px;
+    display: block;
+    text-decoration: none;
+    transition: 0.3s ease;
+    color: rgb(184, 184, 184);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+header nav ul li a:hover{
+    color: rgb(65, 65, 177);
+}
+header nav ul li a span:hover{
+    color: cornsilk;
+}
+section{
+    text-align: center;
+}
+.my_name{
+    padding-top: 22px;
+    color: #b8b8b8;
+}
+.my_name p{
+    font-size: 25px;
+    color: #fff;
+    /* very imoprtant for text typing effict,, down,, */
+    border-right: 4px solid #b8b8b8;
+    width: 215px;
+    /* width: fit-content; */
+    overflow: hidden;
+    white-space: nowrap;
+    animation: control-width 3s steps(16) 1s both, blink 0.7s infinite;
+}
+@keyframes control-width {
+    from{
+        width: 0;
+    }
+    to{
+        width: 215px;
+    }
+}
+
+/* @keyframes control-width {
+    from{
+        width: 215px;
+    }
+    to{
+        width: 0;
+    }
+} */
+@keyframes blink {
+    from{
+        border-right-color: #b8b8b8;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+/* ------------------------------------- */
+.contacts{
+    text-align: start;
+    display: flex;
+
+}
+.contacts ul{
+    list-style-type: none;
+}
+.contacts a{
+    text-decoration: none;
+    color: #f5eeee;
+}
+.main-btn{
+    width: 10rem;
+    height: 2.8rem;
+    background-color: #f5eeee;
+    border-radius: 1rem;
+    text-transform: capitalize;
+    color: #181717;
+    font-size: 1rem;
+    margin: 1rem auto;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 44px;
+}
